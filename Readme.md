@@ -1,0 +1,1 @@
+The is version 2 of nuvaria ai image generater 
