@@ -21,8 +21,8 @@ export default function Home() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-screen  bg-black text-white 
-        transform transition-transform duration-300
+        className={`w-62  fixed top-0 left-0 h-screen  bg-black text-white 
+        transform transition-transform duration-300 
         ${open ? "translate-x-0" : "-translate-x-full"}`}
       >
         <p className="text-start text-3xl font-instrument">Nuvaria</p>

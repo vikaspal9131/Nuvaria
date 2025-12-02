@@ -11,7 +11,7 @@ export default function InputSection() {
   return (
     <div className=" w-2xl flex items-center justify-center  font-inter">
       <div className="w-full max-w-4xl">
-        <div className="bg-black rounded-[5px]">
+        <div className=" bg-[#000000] rounded-[5px]">
           {/* Input Area */}
           <div className="p-6">
             <textarea
