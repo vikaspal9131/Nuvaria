@@ -1,28 +1,53 @@
+"use client";
+
 import { Search } from "lucide-react";
 import InputSection from "./comman/InputSection";
 import { SideBar } from "./comman/SideBar";
 
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
-    <div
-      className="w-full h-[600px]   text-white flex justify-between items-center bg-cover "
-      style={{
-        backgroundImage: `url("https://images.unsplash.com/photo-1669229254123-09a9a4b88c1b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
-      }}
-    >
+    <div className="w-full flex justify-center">
+      <div className=" w-7xl h-[600px]   text-white flex justify-between items-center bg-cover  border-r border-l  border-dashed border-[#2E2E2E]">
+        {/* CONTENT ABOVE VIDEO */}
+        <motion.div
+          className=" z-10 max-w-4xl mx-auto px-4 pt-20 flex flex-col justify-center items-center "
+          initial={{
+            opacity: 0,
+            y: 30,
+            filter: "blur(10px)",
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            filter: "blur(0px)",
+          }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+        >
+          <div className="text-center mb-10 flex flex-col items-center">
+            <motion.h1
+              className="text-5xl md:text-6xl font-[DM_Sans] text-whtie mb-4 font-medium text-[#D4D4D4] "
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 2, y: 1 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+            >
+              Nuvaria powered visuals
+            </motion.h1>
+            <p className="font-inter text-1xl text-[#D4D4D4]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse r
+              erum debitis labore <br /> repellendus ad excepturi in mollitia?
+              Officia nesciunt assumend
+            </p>
+          </div>
 
-    
-      {/* CONTENT ABOVE VIDEO */}
-      <div className=" z-10 max-w-4xl mx-auto px-4 pt-20 flex flex-col justify-center items-center">
-        {/* Heading */}
-        <div className="text-center mb-10">
-          <h1 className="text-5xl md:text-7xl font-instrument text-white mb-4 ">
-            Nuvaria AI-powered visuals, <br /> shaping ideas effortlessly
-          </h1>
-        </div>
-
-        {/* Search Bar */}
-        <InputSection />
+          <div className="flex gap-2 font-[DM_Sans]">
+            <button className="bg-[#1C1C1C] text-white  px-3 py-2   border-[#2E2E2E] ">
+              Document{" "}
+            </button>
+            <button className="bg-[#9F2D18] px-3 ">Get Start now </button>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

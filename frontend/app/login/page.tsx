@@ -11,19 +11,10 @@ export default function SignUpPage() {
 
   return (
     <div className="min-h-screen flex font-inter">
-      <div className="hidden lg:block lg:w-1/2 h-screen relative overflow-hidden bg-black ">
-        <img
-          src="https://i.pinimg.com/1200x/5e/53/05/5e5305b05bd405a0d89570725434099e.jpg"
-          alt=""
-          className="w-full h-full object-cover  "
-        />
-
-
-          
-      </div>
+     
 
       <div
-        className="w-full lg:w-1/2 bg-black text-white flex items-center justify-center p-8"
+        className="w-full lg:w-full bg-black text-white flex items-center justify-center p-8"
         style={{
           backgroundImage: `url("./images/bgimage.png")`,
         }}
@@ -34,10 +25,10 @@ export default function SignUpPage() {
 
           {/* Heading */}
           <div className="mb-8">
-            <h1 className="text-4xl  mb-2 text-gray-100 font-instrument text-center">
+            <h1 className="text-4xl  mb-2 text-gray-100 font-[DM_Sans] font-medium ">
               Welcome back!
             </h1>
-            <p className="text-gray-500 text-sm text-center">
+            <p className="text-gray-500 text-sm ">
               Your work, your team, your flow all in one place.
             </p>
           </div>
@@ -105,7 +96,7 @@ export default function SignUpPage() {
           </button>
 
           {/* Sign Up Link */}
-          <div className="text-center text-sm">
+          <div className="text-sm">
             <span className="text-gray-500">Don't have an account? </span>
             <a href="#" className="text-black font-medium hover:underline">
               Sign Up

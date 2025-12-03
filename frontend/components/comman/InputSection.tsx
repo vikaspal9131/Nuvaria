@@ -1,24 +1,23 @@
-"use client"
+"use client";
 
-
-import { useState } from 'react';
-import { Plus, Shuffle, Clock, ChevronDown, ArrowUp } from 'lucide-react';
+import { useState } from "react";
+import { Plus, Shuffle, Clock, ChevronDown, ArrowUp } from "lucide-react";
 
 export default function InputSection() {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <div className=" w-2xl flex items-center justify-center  font-inter">
       <div className="w-full max-w-4xl">
-        <div className=" bg-[#000000] rounded-[5px]">
+        <div className=" backdrop-blur-3xl bg-black/30 rounded-[5px] border border-[#2E2E2E]">
           {/* Input Area */}
           <div className="p-6">
             <textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="How can I help you today?"
-              className="w-full bg-transparent text-neutral-400 placeholder-neutral-500 text-lg resize-none outline-none "
+              className="w-full bg-transparent text-neutral-100 placeholder-neutral-500 text-[14px] resize-none outline-none "
               rows={2}
             />
           </div>
@@ -47,7 +46,7 @@ export default function InputSection() {
               >
                 <span className="text-sm font-medium">Sonnet 4.5</span>
                 <ChevronDown className="w-4 h-4" />
-                
+
                 {/* Dropdown Menu */}
                 {isDropdownOpen && (
                   <div className="absolute bottom-full right-0 w-48 bg-neutral-700 rounded-lg shadow-xl border border-neutral-600 py-2">
@@ -65,8 +64,8 @@ export default function InputSection() {
               </button>
 
               {/* Send Button */}
-              <button className="p-3 bg-orange-100 hover:bg-orange-700 rounded-lg transition-colors">
-                <ArrowUp className="w-5 h-5 text-black" />
+              <button className="p-2 bg-orange-700 hover:bg-orange-700 rounded-lg transition-colors">
+                <ArrowUp className="w-5 h-5 text-white" />
               </button>
             </div>
           </div>

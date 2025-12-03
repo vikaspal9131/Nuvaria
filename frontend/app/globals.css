@@ -15,6 +15,7 @@
   --font-instrument: var(--font-instrument-serif);
   --font-poppins: var(--font-poppins);
   --font-inter: var(--font-inter);
+
 }
 
 @media (prefers-color-scheme: dark) {
