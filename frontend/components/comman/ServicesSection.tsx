@@ -51,7 +51,7 @@ const ServicesSection: React.FC = () => {
         >
           <div className="flex flex-col sm:flex-row sm:items-start gap-6">
             {/* Number */}
-            <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-orange-600 flex-shrink-0">
+            <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-orange-600 shrink-0">
               {service.number}
             </span>
 
